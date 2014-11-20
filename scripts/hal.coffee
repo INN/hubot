@@ -3,7 +3,7 @@
 
 module.exports = (robot) ->
   robot.respond /do you read me\?$/i, (msg) ->
-    msg.send "Affrirmative, Dave. I read you."
+    msg.send "Affirmative, Dave. I read you."
 
   robot.respond /open the pod bay doors/i, (msg) ->
     msg.send "I'm sorry, Dave. I'm afraid I can't do that."
