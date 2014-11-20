@@ -6,7 +6,7 @@
 #	todo: maybe use a list of famous banjo players, pick a random one and make this more interesting
 
 module.exports = (robot) ->
-  robot.respond /(youtube|yt)( me)? (.*)/i, (msg) ->
+  robot.respond /banjo break/i, (msg) ->
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
