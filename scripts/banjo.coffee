@@ -16,7 +16,6 @@ players = [
 	'Grandpa Jones',
 	'Bill Keith',
 	'Jens Kruger',
-	'Nappy Lamare',
 	'Uncle Dave Macon',
 	'Wade Mainer',
 	'Steve Martin Banjo',
