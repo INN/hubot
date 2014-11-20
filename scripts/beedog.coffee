@@ -9,5 +9,5 @@ module.exports = (robot) ->
 
   robot.respond /beedog me/i, (msg) ->
 
-  	rand = Math.floor(Math.random() * (10 - 83 + 1)) + 10
+  	rand = Math.floor(Math.random() * (83 - 10 + 1)) + 10
   	msg.send "http://beedogs.com/index_files/image0#{rand}.jpg"
