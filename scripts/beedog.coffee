@@ -23,4 +23,4 @@ module.exports = (robot) ->
     high = 83
 
   	rand = Math.floor(Math.random() * (high - low + 1)) + low
-  	msg.send "http://beedogs.com/index_files/image0#{rand}"
+  	msg.reply "http://beedogs.com/index_files/image0#{rand}"
