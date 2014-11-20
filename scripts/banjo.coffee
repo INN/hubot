@@ -3,14 +3,14 @@
 #
 # Commands:
 #   hubot banjo break - Searches YouTube and gets you a banjo video.
-#	todo: maybe use a list of famous banjo players, pick a random one and make this more interesting
+#   todo: maybe use a list of famous banjo players, pick a random one and make this more interesting
 
 module.exports = (robot) ->
   robot.respond /banjo break/i, (msg) ->
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
-        'max-results': 100
+        'max-results': 50
         alt: 'json'
         q: 'banjo'
       })
@@ -22,7 +22,7 @@ module.exports = (robot) ->
           msg.send "No banjo for you"
           return
 
-        video  = msg.random videos
+        video = msg.random videos
         video.link.forEach (link) ->
           if link.rel is "alternate" and link.type is "text/html"
             msg.send link.href
