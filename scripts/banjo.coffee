@@ -7,7 +7,7 @@
 
 module.exports = (robot) ->
   robot.respond /banjo break/i, (msg) ->
-  	query = 'banjo'
+  	query = banjo
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
