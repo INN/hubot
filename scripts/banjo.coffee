@@ -7,12 +7,13 @@
 
 module.exports = (robot) ->
   robot.respond /banjo break/i, (msg) ->
+  	query = 'banjo'
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
-        'max-results': 100
+        'max-results': 15
         alt: 'json'
-        q: 'banjo'
+        q: query
       })
       .get() (err, res, body) ->
         videos = JSON.parse(body)
