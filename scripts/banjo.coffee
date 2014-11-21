@@ -7,7 +7,6 @@
 players = [
 	'Eddie Adcock',
 	'Dock Boggs',
-	'Roy Clark',
 	'J. D. Crowe',
 	'Doug Dillard',
 	'Béla Fleck',
