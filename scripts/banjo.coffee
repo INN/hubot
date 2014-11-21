@@ -34,7 +34,7 @@ players = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /banjo break/i, (msg) ->
+  robot.hear /banjo break/i, (msg) ->
     query = msg.random players
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
