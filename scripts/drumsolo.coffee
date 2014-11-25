@@ -2,11 +2,18 @@
 #
 #
 # Commands:
-#   hubot drum solo - Searches YouTube and gets you a neil pearl solo
+#   hubot drum solo - Searches YouTube and gets you a drum solo
+
+drummers = [
+	'Neil Peart',
+	'Buddy Rich',
+	'animal'
+]
 
 module.exports = (robot) ->
   robot.hear /drum solo/i, (msg) ->
-    query = 'Neil Peart Drum Solo'
+    drummer = msg.random drummers
+    query = "#{drummer}! drum solo"
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
