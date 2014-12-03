@@ -1,10 +1,10 @@
 [
-"redis-brain.coffee",
- "shipit.coffee", 
- "xkcd.coffee",
- "botsnack.coffee", 
- "emoji-me.coffee", 
- "beerme.coffee",
- "isup.coffee",
- "sudo.coffee"
- ]
+  "redis-brain.coffee",
+  "shipit.coffee",
+  "xkcd.coffee",
+  "botsnack.coffee",
+  "emoji-me.coffee",
+  "beerme.coffee",
+  "isup.coffee",
+  "sudo.coffee"
+]
