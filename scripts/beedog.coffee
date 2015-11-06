@@ -20,9 +20,5 @@ responder = (msg) ->
   msg.send "http://beedogs.com/index_files/image#{out}.jpg"
 
 module.exports = (robot) ->
-
-  robot.respond /beedog me/i, responder
-  
   robot.hear /beedog/i, responder
-
   robot.hear /bee dog/i, responder
